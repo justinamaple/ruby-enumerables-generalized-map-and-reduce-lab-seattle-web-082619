@@ -16,6 +16,6 @@ def reduce(array, starting_value = 0)
   if(!!starting_value == starting_value)
     !!starting_value
   else
-    false
+    starting_value
   end
 end
