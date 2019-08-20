@@ -5,5 +5,5 @@ def map(array, block)
     new_array[i] = yield(block)
   end
   
-  return new_array
+  new_array
 end
