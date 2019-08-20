@@ -13,5 +13,5 @@ def reduce(array, starting_value = 0)
     starting_value = yield(array[i], starting_value)
   end
   
-  !!starting_value
+  if(starting_value.class == 
 end
