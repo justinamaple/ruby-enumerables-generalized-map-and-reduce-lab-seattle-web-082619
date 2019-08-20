@@ -13,7 +13,7 @@ def reduce(array, starting_value = 0)
     starting_value = yield(array[i], starting_value)
   end
   
-  if(starting_value.class == true.class || starting_value.class = false.class)
+  if(!!starting_value == starting_value)
     !!starting_value
   else
     starting_value
