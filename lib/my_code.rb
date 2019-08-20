@@ -4,4 +4,6 @@ def map(array, block)
   array.length.times do |i|
     new_array[i] = yield(block)
   end
+  
+  return new_array
 end
