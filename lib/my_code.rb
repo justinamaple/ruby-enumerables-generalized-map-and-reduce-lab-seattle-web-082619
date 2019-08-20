@@ -13,6 +13,9 @@ def reduce(array, starting_value = 0)
     starting_value = yield(array[i], starting_value)
   end
   
-  if starting_value.is_a? 
-  !!starting_value
+  if starting_value.is_a? Integer
+    starting_value
+  else
+    !!starting_value
+  end
 end
