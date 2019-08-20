@@ -1,5 +1,9 @@
 def map(array)
   new_array = Array.new()
-  yield
+  
+  array.length.times do |i|
+    new_array[i] = yield(array[i])
+  end
+  
   new_array
 end
