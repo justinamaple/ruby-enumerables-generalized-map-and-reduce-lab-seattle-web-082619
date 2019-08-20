@@ -13,9 +13,5 @@ def reduce(array, starting_value = 0)
     starting_value = yield(array[i], starting_value)
   end
   
-  if(starting_value.in? [true, false])
-    !!starting_value
-  else
-    starting_value
-  end
+  !!starting_value
 end
